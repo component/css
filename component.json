@@ -2,7 +2,7 @@
   "name": "css",
   "repo": "component/css",
   "description": "DOM element css helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["css", "style", "stylesheet", "utility"],
   "dependencies": {},
   "development": {},
