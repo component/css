@@ -25,3 +25,5 @@ assert('1px' == el.style.height)
 assert('1' == el.style.opacity)
 assert('1.5' == el.style.lineHeight)
 assert('10' == el.style.zIndex)
+
+assert(el == css(el, {}))
