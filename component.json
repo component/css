@@ -2,7 +2,7 @@
   "name": "css",
   "repo": "component/css",
   "description": "jquery's css()",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [],
   "dependencies": {
     "visionmedia/debug": "0.7.4",
