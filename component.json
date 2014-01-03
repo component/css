@@ -1,13 +1,31 @@
 {
   "name": "css",
   "repo": "component/css",
-  "description": "DOM element css helper",
+  "description": "jquery's css()",
   "version": "0.0.2",
-  "keywords": ["css", "style", "stylesheet", "utility"],
-  "dependencies": {},
-  "development": {},
+  "keywords": [],
+  "dependencies": {
+    "visionmedia/debug": "0.7.4",
+    "ianstormtaylor/to-camel-case": "0.2.1",
+    "component/within-document": "0.0.1"
+  },
+  "development": {
+    "component/domify": "*",
+    "component/assert": "*",
+    "component/load-styles": "*"
+  },
   "license": "MIT",
+  "main": "index.js",
   "scripts": [
-    "index.js"
+    "index.js",
+    "lib/css.js",
+    "lib/prop.js",
+    "lib/swap.js",
+    "lib/style.js",
+    "lib/hooks.js",
+    "lib/styles.js",
+    "lib/vendor.js",
+    "lib/support.js",
+    "lib/computed.js"
   ]
 }

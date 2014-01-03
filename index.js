@@ -1,34 +1,58 @@
-
 /**
- * Properties to ignore appending "px".
+ * Module Dependencies
  */
 
-var ignore = {
-  columnCount: true,
-  fillOpacity: true,
-  fontWeight: true,
-  lineHeight: true,
-  opacity: true,
-  orphans: true,
-  widows: true,
-  zIndex: true,
-  zoom: true
-};
+var debug = require('debug')('css');
+var set = require('./lib/style');
+var get = require('./lib/css');
 
 /**
- * Set `el` css values.
+ * Expose `css`
+ */
+
+module.exports = css;
+
+/**
+ * Get and set css values
  *
  * @param {Element} el
- * @param {Object} obj
- * @return {Element}
+ * @param {String|Object} prop
+ * @param {Mixed} val
+ * @return {Element} el
  * @api public
  */
 
-module.exports = function(el, obj){
-  for (var key in obj) {
-    var val = obj[key];
-    if ('number' == typeof val && !ignore[key]) val += 'px';
-    el.style[key] = val;
+function css(el, prop, val) {
+  if (!el) return;
+
+  if (undefined !== val) {
+    var obj = {};
+    obj[prop] = val;
+    debug('setting styles %j', obj);
+    return setStyles(el, obj);
   }
+
+  if ('object' == typeof prop) {
+    debug('setting styles %j', prop);
+    return setStyles(el, prop);
+  }
+
+  debug('getting %s', prop);
+  return get(el, prop);
+}
+
+/**
+ * Set the styles on an element
+ *
+ * @param {Element} el
+ * @param {Object} props
+ * @return {Element} el
+ */
+
+function setStyles(el, props) {
+  for (var prop in props) {
+    set(el, prop, props[prop]);
+  }
+
   return el;
-};
+}
