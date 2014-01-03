@@ -2,6 +2,7 @@
  * Module Dependencies
  */
 
+var debug = require('debug')('css');
 var set = require('./lib/style');
 var get = require('./lib/css');
 
@@ -27,13 +28,16 @@ function css(el, prop, val) {
   if (undefined !== val) {
     var obj = {};
     obj[prop] = val;
+    debug('setting styles %j', obj);
     return setStyles(el, obj);
   }
 
   if ('object' == typeof prop) {
+    debug('setting styles %j', prop);
     return setStyles(el, prop);
   }
 
+  debug('getting %s', prop);
   return get(el, prop);
 }
 
