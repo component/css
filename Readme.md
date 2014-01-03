@@ -40,7 +40,7 @@ css(p, {
 
 ## TODO
 
-- Finish porting jQuery tests over
+- Finish porting jQuery [css unit tests](https://github.com/jquery/jquery/blob/master/test/unit/css.js) over
 
 ## License
 
