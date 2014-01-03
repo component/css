@@ -4,7 +4,9 @@
   "version": "0.0.2",
   "keywords": [],
   "dependencies": {},
-  "development": {},
+  "devDependencies": {
+    "component-test2": "*"
+  },
   "license": "MIT",
   "component": {
     "scripts": {
