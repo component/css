@@ -5,6 +5,7 @@
   "version": "0.0.3",
   "keywords": [],
   "dependencies": {
+    "component/each": "*",
     "visionmedia/debug": "0.7.4",
     "ianstormtaylor/to-camel-case": "0.2.1",
     "component/within-document": "0.0.1"

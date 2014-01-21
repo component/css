@@ -5,6 +5,7 @@
 var assert = require('assert');
 var css = require('css');
 var domify = require('domify');
+var each = require('each');
 var stylesheet = require('load-styles');
 
 /**
@@ -114,7 +115,7 @@ describe('css(prop)', function() {
     });
 
     it('should handle changes in opacity', function() {
-      "0, 0.25, 0.5, 0.75, 1".split(', ').forEach(function(opacity) {
+      each([ "0", "0.25", "0.5", "0.75", "1" ], function(opacity) {
         css(div, 'opacity', opacity);
         assert(parseFloat(opacity) == css(div, 'opacity'), 'opacity can be a string');
         opacity = parseFloat(opacity);
