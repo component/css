@@ -3,14 +3,28 @@
   "description": "DOM element css helper",
   "version": "0.0.5",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "debug": "*",
+    "within-document": "0.0.1",
+    "to-camel-case": "0.2.1",
+    "component-each": "~0.2.2"
+  },
   "devDependencies": {
+    "domify": "^1.2.2",
+    "load-styles": "^1.0.1",
     "component-test2": "*"
+  },
+  "browser": {
+    "each": "component-each"
   },
   "license": "MIT",
   "component": {
     "scripts": {
       "css/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/css.git"
   }
 }
