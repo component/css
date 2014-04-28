@@ -223,4 +223,14 @@ describe('css(prop)', function() {
     assert('1000' == css(div, 'z-index'));
     el.removeChild(div);
   });
+
+  it('should unset styles', function() {
+    var div = domify('<div>');
+    el.appendChild(div);
+    css(div, 'display', 'none');
+    css(div, 'display', '');
+
+    assert('' === css(div, 'display'));
+    el.removeChild(div);
+  });
 });
