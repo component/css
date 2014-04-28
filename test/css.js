@@ -229,8 +229,7 @@ describe('css(prop)', function() {
     el.appendChild(div);
     css(div, 'display', 'none');
     css(div, 'display', '');
-
-    assert('' === css(div, 'display'));
+    assert('block' == css(div, 'display'));
     el.removeChild(div);
   });
 });
