@@ -1,4 +1,11 @@
 
+0.0.5 / 2014-04-22
+==================
+
+  * package: don't pin `debug` version
+  * prop, css: fix `debug()` call arguments
+  * Feature checking on document.documentElement instead of document.body
+
 0.0.4 / 2014-01-22
 ==================
 
