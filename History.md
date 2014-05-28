@@ -1,4 +1,10 @@
 
+0.0.6 / 2014-05-27
+==================
+
+  * gitignore: ignore `node_modules` (#12, @jonnsl)
+  * package: add `dependencies`, `devdependencies` and `browser` for browserify support
+
 0.0.5 / 2014-04-22
 ==================
 
