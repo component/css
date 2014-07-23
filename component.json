@@ -5,10 +5,10 @@
   "version": "0.0.6",
   "keywords": [],
   "dependencies": {
-    "component/each": "*",
-    "visionmedia/debug": "*",
+    "component/each": "0.2.5",
+    "visionmedia/debug": "1.0.4",
     "ianstormtaylor/to-camel-case": "0.2.1",
-    "component/within-document": "0.0.1"
+    "component/within-document": "0.0.3"
   },
   "development": {
     "component/domify": "*",
