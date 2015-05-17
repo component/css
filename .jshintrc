@@ -1,0 +1,23 @@
+{
+  "asi": true,
+  "curly": false,
+  "eqeqeq": false,
+  "eqnull": true,
+  "immed": true,
+  "latedef": "nofunc",
+  "laxbreak": true,
+  "mocha" : true,
+  "newcap": true,
+  "noarg": true,
+  "browser": true,
+  "shadow": true,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "exports": false,
+    "require": false,
+    "module": false
+  }
+
+}

@@ -11,4 +11,7 @@ clean:
 test:
 	@./node_modules/.bin/component-test phantom
 
+lint:
+	@./node_modules/.bin/jshint index.js lib test
+
 .PHONY: clean test
