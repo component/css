@@ -1,4 +1,9 @@
 
+0.0.7 / 2016-03-15
+==================
+
+  * package: don't use browser alias for component-each dependency (#17, @ockham)
+
 0.0.6 / 2014-05-27
 ==================
 
