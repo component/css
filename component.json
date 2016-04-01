@@ -2,7 +2,7 @@
   "name": "css",
   "repo": "component/css",
   "description": "jquery's css()",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "keywords": [],
   "dependencies": {
     "component/each": "0.2.5",
