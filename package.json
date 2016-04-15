@@ -10,9 +10,10 @@
     "component-each": "~0.2.2"
   },
   "devDependencies": {
+    "component-test2": "*",
     "domify": "^1.2.2",
-    "load-styles": "^1.0.1",
-    "component-test2": "*"
+    "jshint": "^2.7.0",
+    "load-styles": "^1.0.1"
   },
   "browser": {
     "each": "component-each"
